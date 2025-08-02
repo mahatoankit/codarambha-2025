@@ -108,9 +108,9 @@ export const NavbarLogo = ({ className }) => {
         transition: { duration: 0.2, ease: "easeOut" }
       }}
     >
-      {/* Updated to use SVG logo */}
+      {/* Updated to use SVG logo with new filename to bypass cache */}
       <motion.img 
-        src="/logo.svg"
+        src="/codarambha-logo.svg"
         alt="Codarambha Logo"
         className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
         whileHover={{ 
