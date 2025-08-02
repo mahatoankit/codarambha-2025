@@ -6,10 +6,17 @@ import { useState, useEffect } from "react";
 
 export const Navbar = ({ children, className }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
     // Check initial scroll position
-    setIsScrolled(window.scrollY > 50);
+    const initialScrolled = window.scrollY > 50;
+    setIsScrolled(initialScrolled);
+    
+    // Add a small delay to prevent initial animation
+    const timer = setTimeout(() => {
+      setIsInitialized(true);
+    }, 100);
     
     let ticking = false;
     const handleScroll = () => {
@@ -23,7 +30,10 @@ export const Navbar = ({ children, className }) => {
     };
     
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -32,18 +42,36 @@ export const Navbar = ({ children, className }) => {
         "fixed top-0 left-0 right-0 z-50",
         className
       )}
+      initial={{
+        paddingTop: isScrolled ? 16 : 0,
+        paddingLeft: isScrolled ? 16 : 0,
+        paddingRight: isScrolled ? 16 : 0,
+      }}
       animate={{
         paddingTop: isScrolled ? 16 : 0,
         paddingLeft: isScrolled ? 16 : 0,
         paddingRight: isScrolled ? 16 : 0,
       }}
       transition={{
-        duration: 0.5,
+        duration: isInitialized ? 0.5 : 0,
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
     >
       <motion.div
         className="border backdrop-blur-md mx-auto"
+        initial={{
+          backgroundColor: isScrolled 
+            ? "rgba(15, 23, 42, 0.9)" 
+            : "rgba(15, 23, 42, 0.2)",
+          borderColor: isScrolled 
+            ? "rgba(71, 85, 105, 0.5)" 
+            : "transparent",
+          borderRadius: isScrolled ? 50 : 0,
+          maxWidth: isScrolled ? "80rem" : "100%",
+          boxShadow: isScrolled 
+            ? "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(199, 42, 55, 0.1)" 
+            : "0 0 0 0px rgba(0, 0, 0, 0)",
+        }}
         animate={{
           backgroundColor: isScrolled 
             ? "rgba(15, 23, 42, 0.9)" 
@@ -58,18 +86,22 @@ export const Navbar = ({ children, className }) => {
             : "0 0 0 0px rgba(0, 0, 0, 0)",
         }}
         transition={{
-          duration: 0.5,
+          duration: isInitialized ? 0.5 : 0,
           ease: [0.25, 0.46, 0.45, 0.94],
         }}
       >
         <motion.div
           className="px-4 sm:px-6 lg:px-8"
+          initial={{
+            paddingTop: isScrolled ? 8 : 16,
+            paddingBottom: isScrolled ? 8 : 16,
+          }}
           animate={{
             paddingTop: isScrolled ? 8 : 16,
             paddingBottom: isScrolled ? 8 : 16,
           }}
           transition={{
-            duration: 0.5,
+            duration: isInitialized ? 0.5 : 0,
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
         >
