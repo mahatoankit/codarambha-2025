@@ -108,16 +108,30 @@ export const NavbarLogo = ({ className }) => {
         transition: { duration: 0.2, ease: "easeOut" }
       }}
     >
-      <motion.img
-        src="/components/icons/1.png"
-        alt="Codarambha Logo"
-        className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+      <motion.div 
+        className="w-8 h-8 sm:w-10 sm:h-10 relative"
         whileHover={{ 
           rotate: 15,
           transition: { duration: 0.3, ease: "easeOut" }
         }}
         animate={{ rotate: 0 }}
-      />
+      >
+        <img
+          src="/logo.png"
+          alt="Codarambha Logo"
+          className="w-full h-full object-contain"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div 
+          className="w-full h-full bg-[#C12A37] rounded-lg items-center justify-center text-white font-bold text-xs hidden"
+          style={{ display: 'none' }}
+        >
+          C
+        </div>
+      </motion.div>
       <motion.span 
         className="text-lg sm:text-xl lg:text-2xl font-bold text-white"
         whileHover={{
