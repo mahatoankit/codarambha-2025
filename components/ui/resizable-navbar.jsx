@@ -108,8 +108,27 @@ export const NavbarLogo = ({ className }) => {
         transition: { duration: 0.2, ease: "easeOut" }
       }}
     >
+      {/* Updated to use SVG logo */}
+      <motion.img 
+        src="/logo.svg"
+        alt="Codarambha Logo"
+        className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+        whileHover={{ 
+          rotate: 15,
+          transition: { duration: 0.3, ease: "easeOut" }
+        }}
+        animate={{ rotate: 0 }}
+        onError={(e) => {
+          // Fallback to CSS logo if SVG fails to load
+          e.target.style.display = 'none';
+          e.target.nextElementSibling.style.display = 'flex';
+        }}
+      />
+      
+      {/* Fallback CSS logo (hidden by default) */}
       <motion.div 
-        className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C12A37] to-red-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-lg"
+        className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C12A37] to-red-600 rounded-lg items-center justify-center text-white font-bold text-sm shadow-lg"
+        style={{ display: 'none' }}
         whileHover={{ 
           rotate: 15,
           transition: { duration: 0.3, ease: "easeOut" }
@@ -118,6 +137,7 @@ export const NavbarLogo = ({ className }) => {
       >
         C
       </motion.div>
+      
       <motion.span 
         className="text-lg sm:text-xl lg:text-2xl font-bold text-white"
         whileHover={{
