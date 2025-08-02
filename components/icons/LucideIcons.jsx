@@ -136,3 +136,35 @@ export const Linkedin = (props) => (
     <circle cx="4" cy="4" r="2"/>
   </svg>
 );
+
+export const MapPin = (props) => (
+  <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+    <circle cx="12" cy="10" r="3"/>
+  </svg>
+);
+
+export const Award = (props) => (
+  <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="8" r="6"/>
+    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+  </svg>
+);
+
+export const Medal = (props) => (
+  <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.61 2.14a2 2 0 0 1 .13 2.2L16.79 15"/>
+    <path d="M11 12 5.12 2.2"/>
+    <path d="m13 12 5.88-9.8"/>
+    <path d="M8 7h8"/>
+    <circle cx="12" cy="17" r="5"/>
+    <path d="m9 22 3-3 3 3"/>
+    <path d="M9 12h6"/>
+  </svg>
+);
+
+export const Star = (props) => (
+  <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+  </svg>
+);

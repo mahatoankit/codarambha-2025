@@ -4,41 +4,64 @@ import { ThreeDMarquee } from "@/components/ui/3d-marquee.jsx";
 
 export default function ThreeDMarqueeDemo() {
   const images = [
-    "https://assets.aceternity.com/cloudinary_bkp/3d-card.png",
-    "https://assets.aceternity.com/animated-modal.png",
-    "https://assets.aceternity.com/animated-testimonials.webp",
-    "https://assets.aceternity.com/cloudinary_bkp/Tooltip_luwy44.png",
-    "https://assets.aceternity.com/github-globe.png",
-    "https://assets.aceternity.com/glare-card.png",
-    "https://assets.aceternity.com/layout-grid.png",
-    "https://assets.aceternity.com/flip-text.png",
-    "https://assets.aceternity.com/hero-highlight.png",
-    "https://assets.aceternity.com/carousel.webp",
-    "https://assets.aceternity.com/placeholders-and-vanish-input.png",
-    "https://assets.aceternity.com/shooting-stars-and-stars-background.png",
-    "https://assets.aceternity.com/signup-form.png",
-    "https://assets.aceternity.com/cloudinary_bkp/stars_sxle3d.png",
-    "https://assets.aceternity.com/spotlight-new.webp",
-    "https://assets.aceternity.com/cloudinary_bkp/Spotlight_ar5jpr.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Parallax_Scroll_pzlatw_anfkh7.png",
-    "https://assets.aceternity.com/tabs.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Tracing_Beam_npujte.png",
-    "https://assets.aceternity.com/cloudinary_bkp/typewriter-effect.png",
-    "https://assets.aceternity.com/glowing-effect.webp",
-    "https://assets.aceternity.com/hover-border-gradient.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Infinite_Moving_Cards_evhzur.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Lamp_hlq3ln.png",
-    "https://assets.aceternity.com/macbook-scroll.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Meteors_fye3ys.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Moving_Border_yn78lv.png",
-    "https://assets.aceternity.com/multi-step-loader.png",
-    "https://assets.aceternity.com/vortex.png",
-    "https://assets.aceternity.com/wobble-card.png",
-    "https://assets.aceternity.com/world-map.webp",
+    // AI & Machine Learning
+    "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Coding & Programming
+    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Data Science & Analytics
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Innovation & Technology
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Collaboration & Teamwork
+    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Disaster Resilience & Urban Mobility (Hackathon Themes)
+    "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Startups & Innovation
+    "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Tech Workspace & Development
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Digital Innovation
+    "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Problem Solving & Ideas
+    "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    
+    // Future Technology
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop&crop=entropy&auto=format",
+    "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800&h=600&fit=crop&crop=entropy&auto=format",
   ];
 
   return (
-    <div className="mx-auto my-10 max-w-7xl rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800">
+    <div className="w-full h-full">
       <ThreeDMarquee images={images} />
     </div>
   );

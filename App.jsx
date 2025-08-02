@@ -2,10 +2,9 @@ import React from 'react';
 import './src/index.css';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
-import MarqueeSection from './components/MarqueeSection.jsx';
 import About from './components/About.jsx';
 import Themes from './components/Themes.jsx';
-import Schedule from './components/Schedule.jsx';
+import { TimelineDemo } from './components/ui/timeline.jsx';
 import Registration from './components/Registration.jsx';
 import Team from './components/Team.jsx';
 import Sponsors from './components/Sponsors.jsx';
@@ -18,10 +17,9 @@ const App = () => {
       <Header />
       <main>
         <Hero />
-        <MarqueeSection />
         <About />
         <Themes />
-        <Schedule />
+        <TimelineDemo />
         <Registration />
         <Team />
         <Sponsors />
