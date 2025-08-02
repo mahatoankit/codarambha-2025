@@ -1,6 +1,16 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import { 
+  FaBrain, 
+  FaUsers, 
+  FaCogs, 
+  FaFlask,
+  FaRobot,
+  FaLightbulb,
+  FaVideo,
+  FaCalendarAlt
+} from 'react-icons/fa';
 
 const organizationInfo = {
   college: {
@@ -21,24 +31,24 @@ const organizationInfo = {
   department: {
     name: "(Hons) Computer Science and AI",
     abbreviation: "CS&AI",
-    icon: "🤖",
+    icon: FaBrain,
     description: "The premier department fostering innovation in Computer Science and Artificial Intelligence"
   },
   collaborators: [
     { 
-      name: "SSRC", 
-      description: "Student Representative Council - Event Coordination & Management",
-      icon: "👥"
+      name: "Entrepreneurship Club", 
+      description: "Business Strategy & Innovation Support - Helping teams develop viable business models",
+      icon: FaLightbulb
     },
     { 
-      name: "Technical Department", 
-      description: "Infrastructure Support & Technical Resources",
-      icon: "⚙️"
+      name: "Multimedia Club", 
+      description: "Creative Design & Media Production - Visual branding and promotional content",
+      icon: FaVideo
     },
     { 
-      name: "Innovation Lab", 
-      description: "Workspace & Development Environment",
-      icon: "🚀"
+      name: "Event Department", 
+      description: "Logistics & Coordination - Seamless event management and execution",
+      icon: FaCalendarAlt
     }
   ]
 };
@@ -65,7 +75,7 @@ const Sponsors = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            An intra-college hackathon proudly presented by the AI Club, bringing together the brightest minds from Sunway College Kathmandu
+            An intra-college hackathon proudly organized by the AI Club in collaboration with fellow SSRC clubs, bringing together the brightest minds from Sunway College Kathmandu
           </motion.p>
         </div>
 
@@ -117,12 +127,12 @@ const Sponsors = () => {
                   alt="SSRC Logo"
                   className="h-12 w-12 object-contain"
                   onError={(e) => {
-                    // Fallback to emoji if logo fails to load
+                    // Fallback to icon if logo fails to load
                     e.target.style.display = 'none';
                     e.target.nextElementSibling.style.display = 'block';
                   }}
                 />
-                <span className="text-2xl" style={{ display: 'none' }}>🤖</span>
+                <FaRobot className="w-12 h-12 text-white" style={{ display: 'none' }} />
               </div>
               <h4 className="text-2xl font-bold text-white mb-2">{organizationInfo.organizer.club}</h4>
               <p className="text-slate-400 text-sm mb-4">{organizationInfo.organizer.fullName}</p>
@@ -165,9 +175,8 @@ const Sponsors = () => {
               {/* Department Icon */}
               <div className="relative mb-6">
                 <div className="w-24 h-24 mx-auto bg-gradient-to-r from-[#C12A37] to-red-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-4xl">{organizationInfo.department.icon}</span>
+                  <organizationInfo.department.icon className="w-12 h-12 text-white" />
                 </div>
-                <div className="absolute -inset-2 bg-gradient-to-r from-[#C12A37]/20 to-red-500/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               
               {/* Department Name */}
@@ -205,8 +214,17 @@ const Sponsors = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <span className="text-[#C12A37]">Support</span> & Collaboration
+            <span className="text-[#C12A37]">Collaborating</span> SSRC Clubs
           </motion.h3>
+          <motion.p 
+            className="text-center text-slate-400 mb-8 max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            The AI Club partners with fellow SSRC clubs to bring diverse expertise and comprehensive support to Codarambha 2025
+          </motion.p>
           <div className="grid md:grid-cols-3 gap-8">
             {organizationInfo.collaborators.map((collab, index) => (
               <motion.div
@@ -218,7 +236,9 @@ const Sponsors = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02, y: -2 }}
               >
-                <div className="text-4xl mb-4">{collab.icon}</div>
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-[#C12A37] to-red-600 rounded-2xl flex items-center justify-center">
+                  <collab.icon className="w-8 h-8 text-white" />
+                </div>
                 <h4 className="text-xl font-bold text-white mb-3">{collab.name}</h4>
                 <p className="text-slate-400 text-sm leading-relaxed">{collab.description}</p>
               </motion.div>
@@ -236,7 +256,7 @@ const Sponsors = () => {
         >
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#C12A37]/10 to-red-500/10 border border-[#C12A37]/30 rounded-full px-8 py-4 backdrop-blur-sm">
             <div className="w-3 h-3 bg-[#C12A37] rounded-full animate-pulse"></div>
-            <span className="text-[#C12A37] font-semibold text-lg">Proudly Organized by AI Club (SSRC) - Sunway College Kathmandu</span>
+            <span className="text-[#C12A37] font-semibold text-lg">Proudly Organized by AI Club (SSRC) in Collaboration with Fellow SSRC Clubs - Sunway College Kathmandu</span>
             <div className="w-3 h-3 bg-[#C12A37] rounded-full animate-pulse"></div>
           </div>
         </motion.div>

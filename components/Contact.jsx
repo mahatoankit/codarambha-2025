@@ -1,11 +1,16 @@
 
 import React from 'react';
-import { Mail, Instagram, Facebook, Linkedin } from './icons/LucideIcons';
+import { 
+  FaEnvelope, 
+  FaInstagram, 
+  FaFacebookF, 
+  FaLinkedinIn 
+} from 'react-icons/fa';
 
 const socialLinks = [
-  { icon: <Instagram className="w-7 h-7" />, href: 'https://instagram.com/codarambha', name: 'Instagram' },
-  { icon: <Facebook className="w-7 h-7" />, href: 'https://facebook.com/codarambha', name: 'Facebook' },
-  { icon: <Linkedin className="w-7 h-7" />, href: 'https://linkedin.com/company/codarambha', name: 'LinkedIn' },
+  { icon: <FaInstagram className="w-7 h-7" />, href: 'https://instagram.com/codarambha', name: 'Instagram' },
+  { icon: <FaFacebookF className="w-7 h-7" />, href: 'https://facebook.com/codarambha', name: 'Facebook' },
+  { icon: <FaLinkedinIn className="w-7 h-7" />, href: 'https://linkedin.com/company/codarambha', name: 'LinkedIn' },
 ];
 
 const Contact = () => {
@@ -23,7 +28,7 @@ const Contact = () => {
             href="mailto:codarambha@sunway.edu.np"
             className="inline-flex items-center text-xl font-semibold text-slate-200 hover:text-[#C12A37] transition-colors"
           >
-            <Mail className="w-6 h-6 mr-3" />
+            <FaEnvelope className="w-6 h-6 mr-3" />
             codarambha@sunway.edu.np
           </a>
         </div>

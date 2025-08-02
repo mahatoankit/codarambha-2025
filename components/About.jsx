@@ -1,23 +1,26 @@
-
 import React from 'react';
-import { BrainCircuit, Lightbulb, Rocket } from './icons/LucideIcons';
+import { 
+  FaBrain, 
+  FaLightbulb, 
+  FaRocket 
+} from 'react-icons/fa';
 
 const About = () => {
-  const objectives = [
+  const features = [
     {
-      icon: <BrainCircuit className="w-10 h-10 text-[#C12A37]" />,
-      title: 'Ideation',
-      description: 'Sparking creative solutions for pressing real-world problems.'
+      icon: <FaBrain className="w-10 h-10 text-[#C12A37]" />,
+      title: "Ideation",
+      description: "Sparking creative solutions for pressing real-world problems."
     },
     {
-      icon: <Lightbulb className="w-10 h-10 text-[#C12A37]" />,
-      title: 'Innovation',
-      description: 'Fostering a culture of technological creativity and forward-thinking.'
+      icon: <FaLightbulb className="w-10 h-10 text-[#C12A37]" />,
+      title: "Innovation",
+      description: "Fostering a culture of technological creativity and forward-thinking."
     },
     {
-      icon: <Rocket className="w-10 h-10 text-[#C12A37]" />,
-      title: 'Implementation',
-      description: 'Bringing ideas to life through rapid prototyping and mentorship.'
+      icon: <FaRocket className="w-10 h-10 text-[#C12A37]" />,
+      title: "Implementation",
+      description: "Bringing ideas to life through rapid prototyping and mentorship."
     }
   ];
 
@@ -34,8 +37,11 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          {objectives.map((item, index) => (
-            <div key={index} className="bg-slate-800/50 p-8 rounded-lg border border-slate-700 hover:border-[#C12A37] hover:bg-slate-800 transition-all duration-300 transform hover:-translate-y-2">
+          {features.map((item, index) => (
+            <div
+              key={index}
+              className="bg-slate-800/50 p-8 rounded-lg border border-slate-700 hover:border-[#C12A37] hover:bg-slate-800 transition-all duration-300 transform hover:-translate-y-2"
+            >
               <div className="flex justify-center mb-4">
                 {item.icon}
               </div>
