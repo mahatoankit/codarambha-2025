@@ -50,10 +50,15 @@ export const ThreeDMarquee = ({ images, className }) => {
                       }}
                       key={imageIndex + image}
                       src={image}
-                      alt={`Image ${imageIndex + 1}`}
+                      alt={`Hackathon Image ${imageIndex + 1}`}
                       className="aspect-[970/700] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
                       width={970}
                       height={700}
+                      onError={(e) => {
+                        console.error(`Failed to load image: ${image}`);
+                        e.target.style.display = 'none';
+                      }}
+                      loading="lazy"
                     />
                   </div>
                 ))}
