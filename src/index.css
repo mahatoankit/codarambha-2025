@@ -58,3 +58,130 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom Team Card Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+  66% {
+    transform: translateY(-12px) rotate(-2deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(193, 42, 55, 0.4), 0 0 40px rgba(193, 42, 55, 0.1);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(193, 42, 55, 0.6), 0 0 60px rgba(193, 42, 55, 0.2);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    background-position: 200% 0;
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Enhanced hover effects */
+.card-hover-lift {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-15px) scale(1.02);
+}
+
+/* Badge hover effects */
+@keyframes badge-bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+
+@keyframes badge-glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 30px currentColor;
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5), 0 0 50px currentColor;
+  }
+}
+
+.animate-badge-bounce {
+  animation: badge-bounce 2s ease-in-out infinite;
+}
+
+.animate-badge-glow {
+  animation: badge-glow-pulse 3s ease-in-out infinite;
+}
+
+/* Gradient text animations */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
