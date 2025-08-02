@@ -6,7 +6,7 @@ const organizationInfo = {
   college: {
     name: "Sunway College Kathmandu",
     logo: "/sunway-logo.svg", // Using the actual Sunway College logo
-    description: "Excellence in Engineering Education"
+    description: "Creating AI Leaders"
   },
   organizer: {
     club: "AI Club (SSRC)",
@@ -18,12 +18,12 @@ const organizationInfo = {
       role: "Event Lead Organizer"
     }
   },
-  supportingDepartments: [
-    { name: "Computer Science & Engineering", abbreviation: "CSE", icon: "💻" },
-    { name: "Information Technology", abbreviation: "IT", icon: "🔧" },
-    { name: "Electronics & Communication", abbreviation: "ECE", icon: "📡" },
-    { name: "Data Science & Analytics", abbreviation: "DSA", icon: "📊" }
-  ],
+  department: {
+    name: "(Hons) Computer Science and AI",
+    abbreviation: "CS&AI",
+    icon: "🤖",
+    description: "The premier department fostering innovation in Computer Science and Artificial Intelligence"
+  },
   collaborators: [
     { 
       name: "SSRC", 
@@ -142,7 +142,7 @@ const Sponsors = () => {
           </motion.div>
         </div>
 
-        {/* Participating Departments */}
+        {/* Department Showcase */}
         <div className="mb-16">
           <motion.h3 
             className="text-2xl font-bold text-white text-center mb-8"
@@ -151,27 +151,49 @@ const Sponsors = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Participating <span className="text-[#C12A37]">Departments</span>
+            Our <span className="text-[#C12A37]">Department</span>
           </motion.h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {organizationInfo.supportingDepartments.map((dept, index) => (
-              <motion.div
-                key={index}
-                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 text-center hover:bg-slate-700/50 hover:border-[#C12A37]/30 transition-all duration-300"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05, y: -5 }}
-              >
-                <div className="text-3xl mb-3">{dept.icon}</div>
-                <div className="w-12 h-12 mx-auto mb-3 bg-gradient-to-r from-[#C12A37] to-red-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">{dept.abbreviation}</span>
+          
+          <motion.div
+            className="max-w-2xl mx-auto"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-md border border-slate-700/30 rounded-3xl p-8 text-center hover:border-[#C12A37]/30 transition-all duration-500 group">
+              {/* Department Icon */}
+              <div className="relative mb-6">
+                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-[#C12A37] to-red-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-4xl">{organizationInfo.department.icon}</span>
                 </div>
-                <h4 className="text-sm font-semibold text-white leading-tight">{dept.name}</h4>
-              </motion.div>
-            ))}
-          </div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-[#C12A37]/20 to-red-500/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              
+              {/* Department Name */}
+              <h4 className="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-[#C12A37] transition-colors duration-300">
+                {organizationInfo.department.name}
+              </h4>
+              
+              {/* Department Abbreviation Badge */}
+              <div className="inline-flex items-center gap-2 bg-slate-900/50 border border-slate-700/50 rounded-full px-6 py-2 mb-4">
+                <div className="w-2 h-2 bg-[#C12A37] rounded-full animate-pulse"></div>
+                <span className="text-[#C12A37] font-bold text-lg">{organizationInfo.department.abbreviation}</span>
+              </div>
+              
+              {/* Department Description */}
+              <p className="text-slate-300 leading-relaxed max-w-lg mx-auto">
+                {organizationInfo.department.description}
+              </p>
+              
+              {/* Decorative Elements */}
+              <div className="flex justify-center items-center gap-4 mt-6 opacity-60">
+                <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-[#C12A37]"></div>
+                <div className="w-2 h-2 bg-[#C12A37] rounded-full"></div>
+                <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-[#C12A37]"></div>
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         {/* Support & Collaboration */}
