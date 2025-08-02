@@ -27,29 +27,56 @@ export const Navbar = ({ children, className }) => {
   }, []);
 
   return (
-    <div
+    <motion.div
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out",
-        isScrolled ? "pt-4 px-4" : "pt-0 px-0",
+        "fixed top-0 left-0 right-0 z-50",
         className
       )}
+      animate={{
+        paddingTop: isScrolled ? 16 : 0,
+        paddingLeft: isScrolled ? 16 : 0,
+        paddingRight: isScrolled ? 16 : 0,
+      }}
+      transition={{
+        duration: 0.5,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      }}
     >
-      <div
-        className={cn(
-          "transition-all duration-300 ease-out border backdrop-blur-md mx-auto",
-          isScrolled 
-            ? "bg-slate-900/90 border-slate-700/50 rounded-full shadow-2xl shadow-black/25 max-w-7xl" 
-            : "bg-slate-900/20 border-transparent rounded-none w-full",
-        )}
+      <motion.div
+        className="border backdrop-blur-md mx-auto"
+        animate={{
+          backgroundColor: isScrolled 
+            ? "rgba(15, 23, 42, 0.9)" 
+            : "rgba(15, 23, 42, 0.2)",
+          borderColor: isScrolled 
+            ? "rgba(71, 85, 105, 0.5)" 
+            : "transparent",
+          borderRadius: isScrolled ? 50 : 0,
+          maxWidth: isScrolled ? "80rem" : "100%",
+          boxShadow: isScrolled 
+            ? "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(199, 42, 55, 0.1)" 
+            : "0 0 0 0px rgba(0, 0, 0, 0)",
+        }}
+        transition={{
+          duration: 0.5,
+          ease: [0.25, 0.46, 0.45, 0.94],
+        }}
       >
-        <div className={cn(
-          "px-4 sm:px-6 lg:px-8 transition-all duration-300 ease-out",
-          isScrolled ? "py-2" : "py-4",
-        )}>
+        <motion.div
+          className="px-4 sm:px-6 lg:px-8"
+          animate={{
+            paddingTop: isScrolled ? 8 : 16,
+            paddingBottom: isScrolled ? 8 : 16,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: [0.25, 0.46, 0.45, 0.94],
+          }}
+        >
           {children}
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
@@ -72,18 +99,34 @@ export const NavbarLogo = ({ className }) => {
       href="#home"
       onClick={(e) => handleLinkClick(e, '#home')}
       className={cn("flex items-center space-x-3 flex-shrink-0", className)}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ duration: 0.2 }}
+      whileHover={{ 
+        scale: 1.05,
+        transition: { duration: 0.3, ease: "easeOut" }
+      }}
+      whileTap={{ 
+        scale: 0.95,
+        transition: { duration: 0.2, ease: "easeOut" }
+      }}
     >
-      <img
+      <motion.img
         src="/components/icons/1.png"
         alt="Codarambha Logo"
         className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+        whileHover={{ 
+          rotate: 15,
+          transition: { duration: 0.3, ease: "easeOut" }
+        }}
+        animate={{ rotate: 0 }}
       />
-      <span className="text-lg sm:text-xl lg:text-2xl font-bold text-white">
+      <motion.span 
+        className="text-lg sm:text-xl lg:text-2xl font-bold text-white"
+        whileHover={{
+          color: "#C12A37",
+          transition: { duration: 0.3, ease: "easeOut" }
+        }}
+      >
         Codarambha <span className="text-[#C12A37]">2025</span>
-      </span>
+      </motion.span>
     </motion.a>
   );
 };
@@ -101,12 +144,29 @@ export const NavItems = ({ items, className }) => {
           key={item.href}
           href={item.href}
           onClick={(e) => handleLinkClick(e, item.href)}
-          className="relative px-4 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 rounded-full hover:bg-slate-800/50"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          transition={{ duration: 0.2 }}
+          className="relative px-4 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-300 rounded-full"
+          whileHover={{ 
+            scale: 1.05,
+            y: -2,
+            transition: { duration: 0.3, ease: "easeOut" }
+          }}
+          whileTap={{ 
+            scale: 0.95,
+            transition: { duration: 0.2, ease: "easeOut" }
+          }}
         >
-          {item.label}
+          <motion.span className="relative z-10">
+            {item.label}
+          </motion.span>
+          <motion.div
+            className="absolute inset-0 rounded-full bg-gradient-to-r from-[#C12A37]/20 to-red-500/20 opacity-0"
+            whileHover={{ 
+              opacity: 1,
+              scale: 1.1,
+              transition: { duration: 0.3, ease: "easeOut" }
+            }}
+            initial={{ scale: 0.8 }}
+          />
         </motion.a>
       ))}
     </nav>
@@ -137,26 +197,50 @@ export const NavbarButton = ({
   };
 
   const baseClasses = cn(
-    "rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent whitespace-nowrap",
+    "rounded-full font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent whitespace-nowrap relative overflow-hidden",
     sizeClasses[size]
   );
   
   const variants = {
-    primary: "bg-[#C12A37] text-white hover:bg-red-700 focus:ring-[#C12A37] shadow-lg shadow-red-900/25 hover:shadow-red-900/40",
-    secondary: "bg-slate-800/50 text-slate-300 border border-slate-600/50 hover:bg-slate-700/50 hover:text-white hover:border-slate-500 focus:ring-slate-500",
-    ghost: "bg-transparent text-slate-300 hover:bg-slate-800/30 hover:text-white"
+    primary: "bg-[#C12A37] text-white focus:ring-[#C12A37]",
+    secondary: "bg-slate-800/50 text-slate-300 border border-slate-600/50 focus:ring-slate-500",
+    ghost: "bg-transparent text-slate-300"
   };
 
   return (
     <motion.button
       className={cn(baseClasses, variants[variant], className)}
       onClick={handleClick}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ duration: 0.2 }}
+      whileHover={{ 
+        scale: 1.05,
+        y: -2,
+        transition: { duration: 0.3, ease: "easeOut" }
+      }}
+      whileTap={{ 
+        scale: 0.95,
+        transition: { duration: 0.2, ease: "easeOut" }
+      }}
       {...props}
     >
-      {children}
+      <motion.span className="relative z-10">
+        {children}
+      </motion.span>
+      
+      {/* Hover overlay effect */}
+      <motion.div
+        className={cn(
+          "absolute inset-0 rounded-full",
+          variant === "primary" && "bg-gradient-to-r from-red-600 to-red-700",
+          variant === "secondary" && "bg-slate-700/70 border border-slate-500",
+          variant === "ghost" && "bg-slate-800/40"
+        )}
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileHover={{ 
+          opacity: variant === "primary" ? 0.9 : 1,
+          scale: 1,
+          transition: { duration: 0.3, ease: "easeOut" }
+        }}
+      />
     </motion.button>
   );
 };
