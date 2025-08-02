@@ -10,7 +10,7 @@ const sponsors = [
   { name: 'CloudNet', logoUrl: 'https://placehold.co/180x80/ffffff/000000?text=CloudNet' },
 ];
 
-const Sponsors: React.FC = () => {
+const Sponsors = () => {
   return (
     <section id="sponsors" className="py-20 sm:py-24 bg-slate-800/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

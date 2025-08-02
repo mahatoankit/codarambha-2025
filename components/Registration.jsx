@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const Registration: React.FC = () => {
+const Registration = () => {
   return (
     <section id="registration" className="py-20 sm:py-24 bg-slate-800/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -8,7 +8,7 @@ const socialLinks = [
   { icon: <Linkedin className="w-7 h-7" />, href: 'https://linkedin.com/company/codarambha', name: 'LinkedIn' },
 ];
 
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
     <section id="contact" className="py-20 sm:py-24 bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">

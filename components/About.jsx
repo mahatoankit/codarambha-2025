@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrainCircuit, Lightbulb, Rocket } from './icons/LucideIcons';
 
-const About: React.FC = () => {
+const About = () => {
   const objectives = [
     {
       icon: <BrainCircuit className="w-10 h-10 text-[#C12A37]" />,

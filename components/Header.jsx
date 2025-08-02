@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-const Header: React.FC = () => {
+const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     { href: '#contact', label: 'Contact' },
   ];
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleLinkClick = (e, href) => {
     e.preventDefault();
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);

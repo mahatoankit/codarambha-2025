@@ -1,13 +1,7 @@
 
 import React from 'react';
 
-interface TeamMember {
-  name: string;
-  role: string;
-  imageUrl: string;
-}
-
-const teamMembers: TeamMember[] = [
+const teamMembers = [
   { name: 'Alice Johnson', role: 'Core Lead', imageUrl: 'https://placehold.co/150x150/C12A37/white?text=AJ' },
   { name: 'Bob Williams', role: 'Logistics Head', imageUrl: 'https://placehold.co/150x150/4f46e5/white?text=BW' },
   { name: 'Charlie Brown', role: 'Marketing Lead', imageUrl: 'https://placehold.co/150x150/16a34a/white?text=CB' },
@@ -18,7 +12,7 @@ const teamMembers: TeamMember[] = [
   { name: 'Hannah Wilson', role: 'Volunteer Coordinator', imageUrl: 'https://placehold.co/150x150/f97316/white?text=HW' },
 ];
 
-const Team: React.FC = () => {
+const Team = () => {
   return (
     <section id="team" className="py-20 sm:py-24 bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

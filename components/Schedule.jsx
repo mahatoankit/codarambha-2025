@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Calendar, PenTool, Users, Code, Mic, Trophy } from './icons/LucideIcons';
+import { Calendar, PenTool, Users, Code, Mic, Trophy } from './icons/LucideIcons.jsx';
 
-const Schedule: React.FC = () => {
+const Schedule = () => {
   const timelineEvents = [
     {
       icon: <Calendar className="w-6 h-6 text-white" />,

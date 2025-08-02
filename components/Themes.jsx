@@ -2,7 +2,7 @@
 import React from 'react';
 import { ShieldAlert, Route } from './icons/LucideIcons';
 
-const Themes: React.FC = () => {
+const Themes = () => {
   const themes = [
     {
       icon: <ShieldAlert className="w-12 h-12 text-[#C12A37] mb-4" />,
