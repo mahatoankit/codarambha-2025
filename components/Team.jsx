@@ -4,7 +4,7 @@ import { FaCrown, FaStar, FaUsers, FaMedal } from 'react-icons/fa';
 // Head - Top Position
 const head = [
   { 
-    name: 'You', 
+    name: 'Ankit Mahato', 
     role: 'Head of AI Club', 
     tier: 'head',
     imageUrl: 'https://placehold.co/300x400/C12A37/white?text=HEAD',
@@ -174,12 +174,12 @@ const MemberCard = ({ member, size = 'default' }) => {
 
   return (
     <div className="group cursor-pointer">
-      <div className={`${classes.container} relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700/50`}>
+      <div className={`${classes.container} relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700/50`}>
         {/* Member Image - Full Background */}
         <img
           src={member.imageUrl}
           alt={`Photo of ${member.name}`}
-          className={`${classes.image} object-cover transition-transform duration-700 group-hover:scale-110 rounded-3xl`}
+          className={`${classes.image} object-cover transition-transform duration-700 group-hover:scale-125 rounded-3xl`}
         />
         
         {/* Subtle Gradient Border Effect */}
@@ -236,14 +236,14 @@ const Team = () => {
         <div className="flex justify-center mb-16">
           <div className="relative group-card">
             {/* Elegant Crown Badge */}
-            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-10 transition-transform duration-500 group-hover:rotate-12">
-              <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-3 rounded-full shadow-2xl border-2 border-yellow-300 animate-pulse hover:animate-badge-bounce transition-all duration-300">
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-10">
+              <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-3 rounded-full shadow-2xl border-2 border-yellow-300">
                 <div className="bg-gradient-to-t from-yellow-600 to-yellow-400 p-1 rounded-full">
                   <FaCrown className="text-white text-2xl drop-shadow-lg" />
                 </div>
               </div>
               {/* Elegant glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full animate-badge-glow opacity-30 blur-sm"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full opacity-30 blur-sm"></div>
             </div>
             <div className="group">
               {head.map((member, index) => (
@@ -259,14 +259,14 @@ const Team = () => {
             {executives.map((member, index) => (
               <div key={index} className="relative group">
                 {/* Elegant Star Badge */}
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10 transition-transform duration-500 group-hover:rotate-12">
-                  <div className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-2.5 rounded-full shadow-2xl border-2 border-blue-400 animate-float hover:animate-badge-bounce transition-all duration-300">
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-2.5 rounded-full shadow-2xl border-2 border-blue-400">
                     <div className="bg-gradient-to-t from-blue-700 to-blue-500 p-0.5 rounded-full">
                       <FaStar className="text-white text-lg drop-shadow-lg" />
                     </div>
                   </div>
                   {/* Elegant glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full animate-badge-glow opacity-25 blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full opacity-25 blur-sm"></div>
                 </div>
                 <MemberCard member={member} size="executive" />
               </div>
@@ -280,14 +280,14 @@ const Team = () => {
             {coreCommittee.map((member, index) => (
               <div key={index} className="relative group">
                 {/* Elegant Medal Badge */}
-                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-10 transition-transform duration-500 group-hover:-rotate-12">
-                  <div className="bg-gradient-to-r from-green-500 via-emerald-600 to-green-600 p-2 rounded-full shadow-2xl border-2 border-green-400 animate-pulse-glow hover:animate-badge-bounce transition-all duration-300">
+                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="bg-gradient-to-r from-green-500 via-emerald-600 to-green-600 p-2 rounded-full shadow-2xl border-2 border-green-400">
                     <div className="bg-gradient-to-t from-green-600 to-green-500 p-0.5 rounded-full">
                       <FaMedal className="text-white text-base drop-shadow-lg" />
                     </div>
                   </div>
                   {/* Elegant glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full animate-badge-glow opacity-20 blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full opacity-20 blur-sm"></div>
                 </div>
                 <MemberCard member={member} size="core" />
               </div>
@@ -301,14 +301,14 @@ const Team = () => {
             {departmentHeads.map((member, index) => (
               <div key={index} className="relative group">
                 {/* Elegant Team Badge */}
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10 transition-transform duration-500 group-hover:rotate-180">
-                  <div className="bg-gradient-to-r from-purple-500 via-violet-600 to-purple-600 p-1.5 rounded-full shadow-2xl border-2 border-purple-400 animate-shimmer hover:animate-badge-bounce transition-all duration-300">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="bg-gradient-to-r from-purple-500 via-violet-600 to-purple-600 p-1.5 rounded-full shadow-2xl border-2 border-purple-400">
                     <div className="bg-gradient-to-t from-purple-600 to-purple-500 p-0.5 rounded-full">
                       <FaUsers className="text-white text-sm drop-shadow-lg" />
                     </div>
                   </div>
                   {/* Elegant glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-violet-600 rounded-full animate-badge-glow opacity-15 blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-violet-600 rounded-full opacity-15 blur-sm"></div>
                 </div>
                 <MemberCard member={member} size="department" />
               </div>
@@ -322,14 +322,14 @@ const Team = () => {
             {teamCoordinators.map((member, index) => (
               <div key={index} className="relative group">
                 {/* Elegant Coordinator Badge */}
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10 transition-transform duration-500 group-hover:-rotate-12">
-                  <div className="bg-gradient-to-r from-orange-500 via-amber-600 to-orange-600 p-1.5 rounded-full shadow-2xl border-2 border-orange-400 animate-float hover:animate-badge-bounce transition-all duration-300">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="bg-gradient-to-r from-orange-500 via-amber-600 to-orange-600 p-1.5 rounded-full shadow-2xl border-2 border-orange-400">
                     <div className="bg-gradient-to-t from-orange-600 to-orange-500 p-0.5 rounded-full">
                       <FaUsers className="text-white text-xs drop-shadow-lg" />
                     </div>
                   </div>
                   {/* Elegant glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-amber-600 rounded-full animate-badge-glow opacity-15 blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-amber-600 rounded-full opacity-15 blur-sm"></div>
                 </div>
                 <MemberCard member={member} size="default" />
               </div>
