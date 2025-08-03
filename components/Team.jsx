@@ -33,28 +33,28 @@ const executives = [
 // Core Organizing Committee - Third Tier
 const coreCommittee = [
   { 
-    name: 'Alice Johnson', 
+    name: 'John Doe', 
     role: 'Event Director', 
     tier: 'core',
     imageUrl: 'https://placehold.co/260x360/0ea5e9/white?text=AJ',
     description: 'Overseeing event execution'
   },
   { 
-    name: 'Bob Williams', 
+    name: 'John Doe', 
     role: 'Technical Coordinator', 
     tier: 'core',
     imageUrl: 'https://placehold.co/260x360/db2777/white?text=BW',
     description: 'Managing hackathon infrastructure'
   },
   { 
-    name: 'Carol Davis', 
+    name: 'John Doe', 
     role: 'Marketing Lead', 
     tier: 'core',
     imageUrl: 'https://placehold.co/260x360/f59e0b/white?text=CD',
     description: 'Promoting and outreach efforts'
   },
   { 
-    name: 'David Smith', 
+    name: 'John Doe', 
     role: 'Logistics Manager', 
     tier: 'core',
     imageUrl: 'https://placehold.co/260x360/10b981/white?text=DS',
@@ -65,28 +65,28 @@ const coreCommittee = [
 // Department Heads - Fourth Tier
 const departmentHeads = [
   { 
-    name: 'Emma Wilson', 
+    name: 'John Doe', 
     role: 'Sponsorship Head', 
     tier: 'department',
     imageUrl: 'https://placehold.co/240x320/ef4444/white?text=EW',
     description: 'Partnership and funding'
   },
   { 
-    name: 'Frank Brown', 
+    name: 'John Doe', 
     role: 'Design Head', 
     tier: 'department',
     imageUrl: 'https://placehold.co/240x320/8b5cf6/white?text=FB',
     description: 'Visual identity and graphics'
   },
   { 
-    name: 'Grace Lee', 
+    name: 'John Doe', 
     role: 'Content Head', 
     tier: 'department',
     imageUrl: 'https://placehold.co/240x320/06b6d4/white?text=GL',
     description: 'Workshop and educational content'
   },
   { 
-    name: 'Henry Taylor', 
+    name: 'John Doe', 
     role: 'Operations Head', 
     tier: 'department',
     imageUrl: 'https://placehold.co/240x320/f97316/white?text=HT',

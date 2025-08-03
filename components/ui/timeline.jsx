@@ -97,19 +97,19 @@ export function TimelineDemo() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Event Launch</h4>
-              <p className="text-slate-400 text-sm">Aug 1-3: Official launch and registrations open</p>
+              <p className="text-slate-400 text-sm">Aug 1-4: Official launch and registrations open</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Registration Window</h4>
-              <p className="text-slate-400 text-sm">Aug 3-22: Teams register and prepare ideas</p>
+              <p className="text-slate-400 text-sm">Aug 4-23: Teams register and prepare ideas</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Pitch Preparation</h4>
-              <p className="text-slate-400 text-sm">Aug 22-23: Slot scheduling and team briefing</p>
+              <p className="text-slate-400 text-sm">Aug 23-24: Slot scheduling and team briefing</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Live Ideathon</h4>
-              <p className="text-slate-400 text-sm">Aug 25: Teams present live on campus</p>
+              <p className="text-slate-400 text-sm">Aug 26: Teams present live on campus</p>
             </div>
           </div>
           <div className="bg-gradient-to-r from-[#C12A37]/10 to-slate-800/30 rounded-lg p-4 border border-[#C12A37]/30">
@@ -117,7 +117,7 @@ export function TimelineDemo() {
               <div className="w-2 h-2 bg-[#C12A37] rounded-full"></div>
               <h4 className="text-[#C12A37] font-semibold">Key Milestone</h4>
             </div>
-            <p className="text-slate-300 text-sm">Aug 26: Top 8 Finalist Teams Announcement</p>
+            <p className="text-slate-300 text-sm">Aug 27: Top 8 Finalist Teams Announcement</p>
           </div>
         </div>
       ),
@@ -132,7 +132,7 @@ export function TimelineDemo() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Sprint Begins</h4>
-              <p className="text-slate-400 text-sm">Aug 27: Development phase kicks off</p>
+              <p className="text-slate-400 text-sm">Aug 28: Development phase kicks off</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Mid-Sprint Check</h4>

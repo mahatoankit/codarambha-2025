@@ -13,7 +13,7 @@ const Registration = () => {
         </p>
         <div className="mt-12">
           <a
-            href="https://forms.google.com/your-hackathon-form"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfopgEDWYTpsqlPx7V0t2-psfdSaLeekQPkTkRtMXHLDVlkQA/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#C12A37] text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-red-900/50"
@@ -22,9 +22,9 @@ const Registration = () => {
           </a>
         </div>
         <div className="mt-8 text-slate-400">
-          <p>Registration Deadline: <span className="font-bold text-white">August 20, 2025</span></p>
+          <p>Registration Deadline: <span className="font-bold text-white">August 23, 2025</span></p>
           <p className="mt-2 text-sm">
-            Limited to Sunway College students. Teams can have a maximum of 4 members.
+            Limited to Sunway College students. Teams can have 3 to 5 members.
           </p>
         </div>
       </div>
