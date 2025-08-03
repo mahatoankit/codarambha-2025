@@ -13,7 +13,7 @@ const Registration = () => {
         </p>
         <div className="mt-12">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfopgEDWYTpsqlPx7V0t2-psfdSaLeekQPkTkRtMXHLDVlkQA/viewform"
+            href="https://forms.gle/11HMh3XUArN2qfwS9"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#C12A37] text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-red-900/50"
