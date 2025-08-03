@@ -7,7 +7,7 @@ const head = [
     name: 'Ankit Mahato', 
     role: 'Head of AI Club', 
     tier: 'head',
-    imageUrl: 'https://placehold.co/300x400/C12A37/white?text=HEAD',
+    imageUrl: '../public/images/team/ankit-mahato.jpg',
     description: 'Leading the AI Club and organizing Codarambha 2025'
   },
 ];
@@ -183,13 +183,16 @@ const MemberCard = ({ member, size = 'default' }) => {
         />
         
         {/* Subtle Gradient Border Effect */}
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#C12A37]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#C12A37]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+             style={{ borderRadius: 'inherit' }}></div>
         
         {/* Dark Overlay - Always Present but Subtle */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
+             style={{ borderRadius: 'inherit' }}></div>
         
         {/* Details Overlay - Slides in from Top to Bottom on Hover */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 transform translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out flex flex-col justify-center rounded-3xl overflow-hidden backdrop-blur-sm">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 transform translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out flex flex-col justify-center overflow-hidden backdrop-blur-sm"
+             style={{ borderRadius: 'inherit' }}>
           <div className={`text-white ${classes.overlay} transform translate-y-0`}>
             <h3 className={`${classes.title} font-bold mb-2 leading-tight text-white drop-shadow-lg`}>
               {member.name}
@@ -204,7 +207,8 @@ const MemberCard = ({ member, size = 'default' }) => {
         </div>
 
         {/* Name Badge - Always Visible at Bottom with Enhanced Design */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 transform group-hover:translate-y-full transition-transform duration-700 rounded-b-3xl backdrop-blur-sm">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 transform group-hover:translate-y-full transition-transform duration-700 backdrop-blur-sm"
+             style={{ borderBottomLeftRadius: 'inherit', borderBottomRightRadius: 'inherit' }}>
           <p className="text-white font-semibold text-center drop-shadow-lg">
             {member.name}
           </p>
