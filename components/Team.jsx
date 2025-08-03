@@ -7,7 +7,7 @@ const head = [
     name: 'Ankit Mahato', 
     role: 'Head of AI Club', 
     tier: 'head',
-    imageUrl: '../public/images/team/ankit-mahato.jpg',
+    imageUrl: '/images/team/ankit-mahato.jpg',
     description: 'Leading the AI Club and organizing Codarambha 2025'
   },
 ];
