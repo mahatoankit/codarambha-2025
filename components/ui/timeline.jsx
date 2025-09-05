@@ -140,11 +140,11 @@ export function TimelineDemo() {
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Mentor Support</h4>
-              <p className="text-slate-400 text-sm">Sept 5 - 15: Continuous mentorship</p>
+              <p className="text-slate-400 text-sm">Sept 5 - 11: Continuous mentorship</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Final Submission</h4>
-              <p className="text-slate-400 text-sm">Sept 15: GitHub, slides, demo video due</p>
+              <p className="text-slate-400 text-sm">Sept 11 by 12:00 AM: GitHub, slides, demo video due</p>
             </div>
           </div>
           <div className="bg-gradient-to-r from-[#C12A37]/10 to-slate-800/30 rounded-lg p-4 border border-[#C12A37]/30">
@@ -178,14 +178,14 @@ export function TimelineDemo() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
-              <h4 className="text-[#C12A37] font-semibold mb-2">Monday, Sept 15</h4>
+              <h4 className="text-[#C12A37] font-semibold mb-2">Monday, Sept 11</h4>
               <div className="text-slate-400 text-sm space-y-1">
                 <p>• 3:00 PM: Team arrivals</p>
                 <p>• 4:00 PM: Hackathon finale begins</p>
               </div>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
-              <h4 className="text-[#C12A37] font-semibold mb-2">Tuesday, Sept 16</h4>
+              <h4 className="text-[#C12A37] font-semibold mb-2">Tuesday, Sept 12</h4>
               <div className="text-slate-400 text-sm space-y-1">
                 <p>• Project presentations</p>
                 <p>• Jury evaluation</p>

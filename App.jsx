@@ -8,8 +8,9 @@ import { TimelineDemo } from './components/ui/timeline.jsx';
 import Registration from './components/Registration.jsx';
 import Team from './components/Team.jsx';
 import Sponsors from './components/Sponsors.jsx';
-import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
+import Mentors from './components/Mentors.jsx';
+import Top8Team from './components/Top8Team.jsx';
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
         <Themes />
         <TimelineDemo />
         <Registration />
+        <Top8Team />
+        <Mentors />
         <Team />
         <Sponsors />
       </main>

@@ -19,18 +19,11 @@ const executives = [
 // Core Organizing Committee - Third Tier
 const coreCommittee = [
   {
-    name: 'Rohan Koirala',
-    role: 'Executive Member',
-    tier: 'executive',
-    imageUrl: 'https://src.rohan-koirala.com.np/portfolio/Picture/TheRohanKoirala.png?text=RK',
-    description: 'Co-organizing and team coordination'
-  },
-  {
-    name: 'Smriti Basnet',
-    role: 'Executive Member',
-    tier: 'executive',
-    imageUrl: '/images/team/meoow - Smriti Basnet.jpg',
-    description: 'Documentation and finance'
+    name: 'Prashanta Acharya',
+    role: 'President - SSRC',
+    tier: 'core',
+    imageUrl: '/images/team/Prashanta Acharya - Prashanta Acharya.jpg',
+    description: 'Communication and Outreach Coordinator'
   },
   {
     name: 'Madan Pandey ',
@@ -40,6 +33,13 @@ const coreCommittee = [
     description: 'Logistics Support'
   },
   {
+    name: 'Rohan Koirala',
+    role: 'Executive Member',
+    tier: 'executive',
+    imageUrl: 'https://src.rohan-koirala.com.np/portfolio/Picture/TheRohanKoirala.png?text=RK',
+    description: 'Co-organizing and team coordination'
+  },
+  {
     name: 'Aarohishree Subedi',
     role: 'Executive Member CLub',
     tier: 'core',
@@ -47,18 +47,11 @@ const coreCommittee = [
     description: 'Judge and Mentor Coordinator'
   },
   {
-    name: 'Sanket Shrestha',
-    role: 'Vice President SSRC',
-    tier: 'core',
-    imageUrl: '/images/team/frmal - Sanket Shrestha.jpeg',
-    description: 'Tech Management'
-  },
-  {
-    name: 'Prashanta Acharya',
-    role: 'President - SSRC',
-    tier: 'core',
-    imageUrl: '/images/team/Prashanta Acharya - Prashanta Acharya.jpg',
-    description: 'Communication and Outreach Coordinator'
+    name: 'Smriti Basnet',
+    role: 'Executive Member',
+    tier: 'executive',
+    imageUrl: '/images/team/meoow - Smriti Basnet.jpg',
+    description: 'Documentation and finance'
   },
   {
     name: 'Krrishpana Karmacharya',
@@ -66,6 +59,13 @@ const coreCommittee = [
     tier: 'core',
     imageUrl: '/images/team/krrishpana - KRRISHPANA KARMACHARYA.jpg',
     description: 'Documentation and finance'
+  },
+  {
+    name: 'Sanket Shrestha',
+    role: 'Vice President SSRC',
+    tier: 'core',
+    imageUrl: '/images/team/frmal - Sanket Shrestha.jpeg',
+    description: 'Tech Management'
   },
 ];
 
