@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { 
-  FaBrain, 
-  FaUsers, 
-  FaCogs, 
+import {
+  FaBrain,
+  FaUsers,
+  FaCogs,
   FaFlask,
   FaRobot,
   FaLightbulb,
@@ -35,18 +35,18 @@ const organizationInfo = {
     description: "The premier department fostering innovation in Computer Science and Artificial Intelligence"
   },
   collaborators: [
-    { 
-      name: "Entrepreneurship Club", 
+    {
+      name: "Entrepreneurship Club",
       description: "Business Strategy & Innovation Support - Helping teams develop viable business models",
       icon: FaLightbulb
     },
-    { 
-      name: "Multimedia Club", 
+    {
+      name: "Multimedia Club",
       description: "Creative Design & Media Production - Visual branding and promotional content",
       icon: FaVideo
     },
-    { 
-      name: "Event Department", 
+    {
+      name: "Event Department",
       description: "Logistics & Coordination - Seamless event management and execution",
       icon: FaCalendarAlt
     }
@@ -59,7 +59,7 @@ const Sponsors = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ const Sponsors = () => {
           >
             Organized <span className="text-[#C12A37]">By</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-lg text-slate-400 max-w-3xl mx-auto mb-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ const Sponsors = () => {
         {/* Main Organization Section */}
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           {/* College Info */}
-          <motion.div 
+          <motion.div
             className="text-center lg:text-left"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -113,7 +113,7 @@ const Sponsors = () => {
           </motion.div>
 
           {/* AI Club & Organizer Info */}
-          <motion.div 
+          <motion.div
             className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-md border border-slate-700/30 rounded-2xl p-8"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -137,7 +137,7 @@ const Sponsors = () => {
               <h4 className="text-2xl font-bold text-white mb-2">{organizationInfo.organizer.club}</h4>
               <p className="text-slate-400 text-sm mb-4">{organizationInfo.organizer.fullName}</p>
             </div>
-            
+
             <div className="border-t border-slate-700/50 pt-6">
               <h5 className="text-lg font-semibold text-white mb-3 text-center">Event Lead</h5>
               <div className="bg-slate-900/50 rounded-xl p-4 text-center">
@@ -152,62 +152,9 @@ const Sponsors = () => {
           </motion.div>
         </div>
 
-        {/* Department Showcase */}
-        <div className="mb-16">
-          <motion.h3 
-            className="text-2xl font-bold text-white text-center mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Our <span className="text-[#C12A37]">Department</span>
-          </motion.h3>
-          
-          <motion.div
-            className="max-w-2xl mx-auto"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-md border border-slate-700/30 rounded-3xl p-8 text-center hover:border-[#C12A37]/30 transition-all duration-500 group">
-              {/* Department Icon */}
-              <div className="relative mb-6">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-[#C12A37] to-red-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                  <organizationInfo.department.icon className="w-12 h-12 text-white" />
-                </div>
-              </div>
-              
-              {/* Department Name */}
-              <h4 className="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-[#C12A37] transition-colors duration-300">
-                {organizationInfo.department.name}
-              </h4>
-              
-              {/* Department Abbreviation Badge */}
-              <div className="inline-flex items-center gap-2 bg-slate-900/50 border border-slate-700/50 rounded-full px-6 py-2 mb-4">
-                <div className="w-2 h-2 bg-[#C12A37] rounded-full animate-pulse"></div>
-                <span className="text-[#C12A37] font-bold text-lg">{organizationInfo.department.abbreviation}</span>
-              </div>
-              
-              {/* Department Description */}
-              <p className="text-slate-300 leading-relaxed max-w-lg mx-auto">
-                {organizationInfo.department.description}
-              </p>
-              
-              {/* Decorative Elements */}
-              <div className="flex justify-center items-center gap-4 mt-6 opacity-60">
-                <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-[#C12A37]"></div>
-                <div className="w-2 h-2 bg-[#C12A37] rounded-full"></div>
-                <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-[#C12A37]"></div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-
         {/* Support & Collaboration */}
         <div className="mb-12">
-          <motion.h3 
+          <motion.h3
             className="text-2xl font-bold text-white text-center mb-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -216,7 +163,7 @@ const Sponsors = () => {
           >
             <span className="text-[#C12A37]">Collaborating</span> SSRC Clubs
           </motion.h3>
-          <motion.p 
+          <motion.p
             className="text-center text-slate-400 mb-8 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -247,7 +194,7 @@ const Sponsors = () => {
         </div>
 
         {/* Call to Action */}
-        <motion.div 
+        <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -40,9 +40,9 @@ const Header = () => {
             <NavbarButton variant="secondary" href="#contact" size="default">
               Contact Us
             </NavbarButton>
-            <NavbarButton variant="primary" href="#registration" size="default">
+            <a target="_blank" href="https://forms.gle/11HMh3XUArN2qfwS9" className='rounded-full font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent whitespace-nowrap relative overflow-hidden px-4 py-2 text-sm bg-[#C12A37] text-white focus:ring-[#C12A37]'>
               Register Now
-            </NavbarButton>
+            </a>
           </div>
         </NavBody>
       </div>
@@ -57,8 +57,8 @@ const Header = () => {
           />
         </MobileNavHeader>
 
-        <MobileNavMenu 
-          isOpen={isMobileMenuOpen} 
+        <MobileNavMenu
+          isOpen={isMobileMenuOpen}
           onClose={() => setIsMobileMenuOpen(false)}
         >
           {navLinks.map((item, idx) => (
@@ -81,15 +81,9 @@ const Header = () => {
             >
               Contact Us
             </NavbarButton>
-            <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
-              variant="primary"
-              className="w-full justify-center"
-              href="#registration"
-              size="lg"
-            >
+            <a target="_blank" href="https://forms.gle/11HMh3XUArN2qfwS9" className='rounded-full font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent whitespace-nowrap relative overflow-hidden px-4 py-2 text-sm bg-[#C12A37] text-white focus:ring-[#C12A37]'>
               Register Now
-            </NavbarButton>
+            </a>
           </div>
         </MobileNavMenu>
       </MobileNav>

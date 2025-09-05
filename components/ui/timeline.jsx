@@ -105,11 +105,11 @@ export function TimelineDemo() {
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Pitch Preparation</h4>
-              <p className="text-slate-400 text-sm">Aug 23-24: Slot scheduling and team briefing</p>
+              <p className="text-slate-400 text-sm">Aug 23-5: Slot scheduling and team briefing</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Live Ideathon</h4>
-              <p className="text-slate-400 text-sm">Aug 26: Teams present live on campus</p>
+              <p className="text-slate-400 text-sm">Sep 5: Teams present live on campus</p>
             </div>
           </div>
           <div className="bg-gradient-to-r from-[#C12A37]/10 to-slate-800/30 rounded-lg p-4 border border-[#C12A37]/30">
@@ -117,7 +117,7 @@ export function TimelineDemo() {
               <div className="w-2 h-2 bg-[#C12A37] rounded-full"></div>
               <h4 className="text-[#C12A37] font-semibold">Key Milestone</h4>
             </div>
-            <p className="text-slate-300 text-sm">Aug 27: Top 8 Finalist Teams Announcement</p>
+            <p className="text-slate-300 text-sm">Sep 5: Top 8 Finalist Teams Announcement</p>
           </div>
         </div>
       ),
@@ -132,19 +132,19 @@ export function TimelineDemo() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Sprint Begins</h4>
-              <p className="text-slate-400 text-sm">Aug 28: Development phase kicks off</p>
+              <p className="text-slate-400 text-sm">Sep 5: Development phase kicks off</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Mid-Sprint Check</h4>
-              <p className="text-slate-400 text-sm">Aug 28: Progress updates and guidance</p>
+              <p className="text-slate-400 text-sm">Sep 5: Progress updates and guidance</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Mentor Support</h4>
-              <p className="text-slate-400 text-sm">Aug 27-Sept 3: Continuous mentorship</p>
+              <p className="text-slate-400 text-sm">Sept 5 - 15: Continuous mentorship</p>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
               <h4 className="text-[#C12A37] font-semibold mb-2">Final Submission</h4>
-              <p className="text-slate-400 text-sm">Sept 3: GitHub, slides, demo video due</p>
+              <p className="text-slate-400 text-sm">Sept 15: GitHub, slides, demo video due</p>
             </div>
           </div>
           <div className="bg-gradient-to-r from-[#C12A37]/10 to-slate-800/30 rounded-lg p-4 border border-[#C12A37]/30">
@@ -178,14 +178,14 @@ export function TimelineDemo() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
-              <h4 className="text-[#C12A37] font-semibold mb-2">Friday, Sept 6</h4>
+              <h4 className="text-[#C12A37] font-semibold mb-2">Monday, Sept 15</h4>
               <div className="text-slate-400 text-sm space-y-1">
                 <p>• 3:00 PM: Team arrivals</p>
                 <p>• 4:00 PM: Hackathon finale begins</p>
               </div>
             </div>
             <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
-              <h4 className="text-[#C12A37] font-semibold mb-2">Saturday, Sept 7</h4>
+              <h4 className="text-[#C12A37] font-semibold mb-2">Tuesday, Sept 16</h4>
               <div className="text-slate-400 text-sm space-y-1">
                 <p>• Project presentations</p>
                 <p>• Jury evaluation</p>

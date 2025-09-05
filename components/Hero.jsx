@@ -6,7 +6,7 @@ const Hero = () => {
     e.preventDefault();
     document.querySelector('#registration')?.scrollIntoView({ behavior: 'smooth' });
   };
-    
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
       {/* 3D Marquee Background */}
@@ -39,7 +39,7 @@ const Hero = () => {
               </span>
             </h1>
           </div>
-          
+
           {/* Description */}
           <div className="space-y-6">
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-300 font-light">
@@ -49,12 +49,11 @@ const Hero = () => {
               Sunway College's flagship hackathon, where brilliant minds tackle real-world challenges in disaster resilience and urban mobility through AI.
             </p>
           </div>
-          
+
           {/* CTA Button */}
           <div className="pt-4">
-            <a 
-              href="#registration" 
-              onClick={handleRegisterClick}
+            <a
+              href="https://forms.gle/11HMh3XUArN2qfwS9"
               className="inline-block bg-[#C12A37] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-110 shadow-lg shadow-red-900/50"
             >
               Register Now

@@ -3,9 +3,9 @@ import { FaCrown, FaStar, FaUsers, FaMedal } from 'react-icons/fa';
 
 // Head - Top Position
 const head = [
-  { 
-    name: 'Ankit Mahato', 
-    role: 'Head of AI Club', 
+  {
+    name: 'Ankit Mahato',
+    role: 'Head of AI Club',
     tier: 'head',
     imageUrl: '/images/team/ankit-mahato.jpg',
     description: 'Leading the AI Club and organizing Codarambha 2025'
@@ -14,109 +14,81 @@ const head = [
 
 // Executive Members - Second Tier
 const executives = [
-  { 
-    name: 'Rohan Koirala', 
-    role: 'Executive Member', 
-    tier: 'executive',
-    imageUrl: 'https://placehold.co/280x380/4f46e5/white?text=RK',
-    description: 'Co-organizing and strategic planning'
-  },
-  { 
-    name: 'Smriti Basnet', 
-    role: 'Executive Member', 
-    tier: 'executive',
-    imageUrl: 'https://placehold.co/280x380/16a34a/white?text=SB',
-    description: 'Operations and team coordination'
-  },
 ];
 
 // Core Organizing Committee - Third Tier
 const coreCommittee = [
-  { 
-    name: 'John Doe', 
-    role: 'Event Director', 
-    tier: 'core',
-    imageUrl: 'https://placehold.co/260x360/0ea5e9/white?text=AJ',
-    description: 'Overseeing event execution'
+  {
+    name: 'Rohan Koirala',
+    role: 'Executive Member',
+    tier: 'executive',
+    imageUrl: 'https://src.rohan-koirala.com.np/portfolio/Picture/TheRohanKoirala.png?text=RK',
+    description: 'Co-organizing and team coordination'
   },
-  { 
-    name: 'John Doe', 
-    role: 'Technical Coordinator', 
-    tier: 'core',
-    imageUrl: 'https://placehold.co/260x360/db2777/white?text=BW',
-    description: 'Managing hackathon infrastructure'
+  {
+    name: 'Smriti Basnet',
+    role: 'Executive Member',
+    tier: 'executive',
+    imageUrl: '/images/team/meoow - Smriti Basnet.jpg',
+    description: 'Documentation and finance'
   },
-  { 
-    name: 'John Doe', 
-    role: 'Marketing Lead', 
+  {
+    name: 'Madan Pandey ',
+    role: 'Event Head SSRC',
     tier: 'core',
-    imageUrl: 'https://placehold.co/260x360/f59e0b/white?text=CD',
-    description: 'Promoting and outreach efforts'
+    imageUrl: '/images/team/IMG-20240827-WA0001 - Madan Pandey.jpg',
+    description: 'Logistics Support'
   },
-  { 
-    name: 'John Doe', 
-    role: 'Logistics Manager', 
+  {
+    name: 'Aarohishree Subedi',
+    role: 'Executive Member CLub',
     tier: 'core',
-    imageUrl: 'https://placehold.co/260x360/10b981/white?text=DS',
-    description: 'Venue and resource management'
+    imageUrl: '/images/team/profile-pic - Aarohishree Subedi.png',
+    description: 'Judge and Mentor Coordinator'
+  },
+  {
+    name: 'Sanket Shrestha',
+    role: 'Vice President SSRC',
+    tier: 'core',
+    imageUrl: '/images/team/frmal - Sanket Shrestha.jpeg',
+    description: 'Tech Management'
+  },
+  {
+    name: 'Prashanta Acharya',
+    role: 'President - SSRC',
+    tier: 'core',
+    imageUrl: '/images/team/Prashanta Acharya - Prashanta Acharya.jpg',
+    description: 'Communication and Outreach Coordinator'
+  },
+  {
+    name: 'Krrishpana Karmacharya',
+    role: 'Vice Sectary - SSRC',
+    tier: 'core',
+    imageUrl: '/images/team/krrishpana - KRRISHPANA KARMACHARYA.jpg',
+    description: 'Documentation and finance'
   },
 ];
 
 // Department Heads - Fourth Tier
 const departmentHeads = [
-  { 
-    name: 'John Doe', 
-    role: 'Sponsorship Head', 
-    tier: 'department',
-    imageUrl: 'https://placehold.co/240x320/ef4444/white?text=EW',
-    description: 'Partnership and funding'
+  {
+    name: 'Ayush Kaji Dangol',
+    role: 'IoT Research Lead - Sunway Collage',
+    tier: 'core',
+    imageUrl: '/images/team/FB_IMG_1757000686068 - Ayush Dangol.jpg',
+    description: 'Advisor'
   },
-  { 
-    name: 'John Doe', 
-    role: 'Design Head', 
-    tier: 'department',
-    imageUrl: 'https://placehold.co/240x320/8b5cf6/white?text=FB',
-    description: 'Visual identity and graphics'
-  },
-  { 
-    name: 'John Doe', 
-    role: 'Content Head', 
-    tier: 'department',
-    imageUrl: 'https://placehold.co/240x320/06b6d4/white?text=GL',
-    description: 'Workshop and educational content'
-  },
-  { 
-    name: 'John Doe', 
-    role: 'Operations Head', 
-    tier: 'department',
-    imageUrl: 'https://placehold.co/240x320/f97316/white?text=HT',
-    description: 'Day-of-event coordination'
+  {
+    name: 'Jatin Bhushal',
+    role: 'Innovation Lead - Sunway Collage',
+    tier: 'core',
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQHXYH6qC1dXeg/profile-displayphoto-shrink_800_800/B4DZPF2vZyHMAc-/0/1734191282662?e=1759968000&v=beta&t=fTPEbzsXhxc6uFN-cSaZIaltGapiYku3aotERtPwPrs',
+    description: 'Advisor'
   },
 ];
 
 // Team Coordinators - Fifth Tier
 const teamCoordinators = [
-  { 
-    name: 'Ian Rodriguez', 
-    role: 'Registration Coordinator', 
-    tier: 'coordinator',
-    imageUrl: 'https://placehold.co/220x320/3b82f6/white?text=IR',
-    description: 'Participant management'
-  },
-  { 
-    name: 'Julia Kim', 
-    role: 'Content Coordinator', 
-    tier: 'coordinator',
-    imageUrl: 'https://placehold.co/220x320/ec4899/white?text=JK',
-    description: 'Workshop & content planning'
-  },
-  { 
-    name: 'Kevin Zhang', 
-    role: 'Technology Coordinator', 
-    tier: 'coordinator',
-    imageUrl: 'https://placehold.co/220x320/84cc16/white?text=KZ',
-    description: 'Platform & tools management'
-  },
 ];
 
 const MemberCard = ({ member, size = 'default' }) => {
@@ -181,18 +153,18 @@ const MemberCard = ({ member, size = 'default' }) => {
           alt={`Photo of ${member.name}`}
           className={`${classes.image} object-cover transition-transform duration-700 group-hover:scale-125 rounded-3xl`}
         />
-        
+
         {/* Subtle Gradient Border Effect */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#C12A37]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-             style={{ borderRadius: 'inherit' }}></div>
-        
+          style={{ borderRadius: 'inherit' }}></div>
+
         {/* Dark Overlay - Always Present but Subtle */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
-             style={{ borderRadius: 'inherit' }}></div>
-        
+          style={{ borderRadius: 'inherit' }}></div>
+
         {/* Details Overlay - Slides in from Top to Bottom on Hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 transform translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out flex flex-col justify-center overflow-hidden backdrop-blur-sm"
-             style={{ borderRadius: 'inherit' }}>
+          style={{ borderRadius: 'inherit' }}>
           <div className={`text-white ${classes.overlay} transform translate-y-0`}>
             <h3 className={`${classes.title} font-bold mb-2 leading-tight text-white drop-shadow-lg`}>
               {member.name}
@@ -208,7 +180,7 @@ const MemberCard = ({ member, size = 'default' }) => {
 
         {/* Name Badge - Always Visible at Bottom with Enhanced Design */}
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 transform group-hover:translate-y-full transition-transform duration-700 backdrop-blur-sm"
-             style={{ borderBottomLeftRadius: 'inherit', borderBottomRightRadius: 'inherit' }}>
+          style={{ borderBottomLeftRadius: 'inherit', borderBottomRightRadius: 'inherit' }}>
           <p className="text-white font-semibold text-center drop-shadow-lg">
             {member.name}
           </p>
@@ -235,7 +207,7 @@ const Team = () => {
         </div>
 
         {/* Team Hierarchy */}
-        
+
         {/* Head - Center Top */}
         <div className="flex justify-center mb-16">
           <div className="relative group-card">

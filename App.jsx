@@ -23,7 +23,6 @@ const App = () => {
         <Registration />
         <Team />
         <Sponsors />
-        <Contact />
       </main>
       <Footer />
     </div>
